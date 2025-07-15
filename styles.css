@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: 400;
+  background-color: #0a0a0a;
+  color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sancreek", serif;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  color: #8a0303;
+  font-size: 50px;
+}
+
+h2 {
+  color: #f2f2f2;
+  font-size: 25px;
+}
+
+h3 {
+  color: #8a0303;
+  font-size: 50px;
+}
+
+h4 {
+  color: #8a0303;
+  font-size: 50px;
+}
+
+h5 {
+  color: #f2f2f2;
+  font-size: 25px;
+}
+
+h6 {
+  color: #8a0303;
+  font-size: 50px;
+}
+
+/* Nav */
+
+button {
+  background: none;
+  border: none;
+  color: #f2f2f2;
+  font-size: 150%;
+  cursor: pointer;
+  display: none;
+  margin-left: auto;
+}
+
+button:focus {
+  color: #8a0303;
+  border: 1px solid, #f2f2f2;
+}
+
+nav {
+  display: flex;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  margin: 1rem;
+}
+
+nav li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+
+/* Hero */
+
+main.hero-banner {
+  display: flex;
+  background: url(assets/Pomegranates\ Fruit\ Seeds.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+div.hero-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 1250px;
+  padding: 1rem;
+  border-radius: 0px;
+}
+
+.video-button {
+  font-family: "Pathway Gothic One", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  display: inline-block;
+  height: 10px;
+  padding: 1rem;
+  background-color: #8a0303;
+  color: #f2f2f2;
+  border-radius: 0;
+  transition: background-color 0.3s ease;
+}
+
+.video-button:hover {
+  background-color: #0a0a0a;
+}
+
+/* Content */
+
+.content-section {
+  padding: 1rem 15rem;
+  text-align: center;
+}
+
+/* Cards */
+
+.card-section {
+  background-color: #111;
+  padding: 3rem 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card1 {
+  background: url(assets/Pomegranate\ Blossom.jpg);
+  background-position: center;  
+  background-size: cover;        
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);     
+  padding: 1.5rem;
+  border-radius: 0;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  border: none;
+}
+
+.card2 {
+  background: url(assets/Pomegranate\ Fruit\ Food.jpg);
+  background-position: center;  
+  background-size: cover;        
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  padding: 1.5rem;
+  border-radius: 0;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  border: none;
+}
+
+.card3 {
+  background: url(assets/Wine\ Liquid\ Bubbles.jpg);
+  background-position: center;  
+  background-size: cover;        
+  background-repeat: no-repeat;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  padding: 1.5rem;
+  border-radius: 0;
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  border: none;
+}
+
+
+/* Video */
+.video-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 570px){
+  button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute; /*hid our nav*/
+    top: 100%;
+    left: 65%;
+    z-index: 100;
+    background-color: rgb(41, 41, 41);
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav.active {
+    display: block;
+  }
+}
