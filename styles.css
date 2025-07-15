@@ -228,4 +228,9 @@ div.hero-content {
   nav.active {
     display: block;
   }
+
+  .content-section {
+  padding: 1rem 5rem;
+  text-align: center;
+  }
 }
